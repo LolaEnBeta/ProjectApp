@@ -10,7 +10,11 @@ class Project extends React.Component {
 
     render() {
         return(
-            <div> {this.state.name} </div>
+            <div className="mt-2">
+                <button className="btn btn-light mt-2">
+                    {this.state.name}
+                </button>
+            </div>
         );
     }
 }
