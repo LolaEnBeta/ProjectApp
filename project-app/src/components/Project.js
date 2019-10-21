@@ -14,7 +14,7 @@ class Project extends React.Component {
             <div className="mt-2">
                 <Link
                     className="btn btn-light mt-2"
-                    to={"/proctect?name=" + this.state.name}>
+                    to={"/project?name=" + this.state.name}>
                     {this.state.name}
                 </Link>
             </div>
