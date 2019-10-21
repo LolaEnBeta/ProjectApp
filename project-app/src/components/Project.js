@@ -1,13 +1,16 @@
 import React from 'react';
 
 class Project extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
+        this.state = {
+            name: this.props.name,
+        }
     }
 
     render() {
         return(
-            <div> PROJECT </div>
+            <div> {this.state.name} </div>
         );
     }
 }
