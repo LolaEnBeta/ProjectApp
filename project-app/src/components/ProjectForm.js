@@ -26,6 +26,10 @@ class ProjectForm extends React.Component {
                         name="name"
                         placeholder="Project name"
                     />
+                    <input
+                        className="btn"
+                        type="submit"
+                        value="Create"/>
                 </form>
             </div>
         );
