@@ -4,6 +4,7 @@ import './App.css';
 import HomePage from './routers/HomePage';
 import ProjectsPage from './routers/ProjectsPage';
 import ProjectPage from './routers/ProjectPage';
+import FormPage from './routers/FormPage';
 
 class App extends React.Component {
   constructor() {
@@ -17,11 +18,13 @@ class App extends React.Component {
           <nav className="navbar navbar-expand-lg">
             <Link className="btn btn-light m-2" to="/">Home</Link>
             <Link className="btn btn-light m-2" to="/projects">Projects</Link>
+            <Link className="btn btn-light m-2" to="/projectform">Add new project</Link>
           </nav>
           <div>
             <Route exact path="/" component={HomePage}/>
             <Route path="/projects" component={ProjectsPage}/>
             <Route path="/project" component={ProjectPage}/>
+            <Route path="/projectform" component={FormPage}/>
           </div>
         </div>
       </Router>
