@@ -8,8 +8,15 @@ class ProjectForm extends React.Component {
     render() {
         return(
             <div>
-                <form>
-                    <input placeholder="Project name" type="text"></input>
+                <form
+                    // onSubmit={this.addProject.bind(this)}
+                >
+                    <input
+                        onChange={event => this.changeStateValues(event.target)}
+                        type="text"
+                        name="name"
+                        placeholder="Project name"
+                    />
                 </form>
             </div>
         );
