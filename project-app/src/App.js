@@ -13,9 +13,9 @@ class App extends React.Component {
     return(
       <Router>
         <div className="App">
-          <nav>
-            <Link to="/">Home</Link>
-            <Link to="/projects">Projects</Link>
+          <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{backgroundColor: "#e3f2fd"}}>
+            <Link className="btn btn-light m-2" to="/">Home</Link>
+            <Link className="btn btn-light m-2" to="/projects">Projects</Link>
           </nav>
           <div>
             <Route exact path="/" component={HomePage}/>
