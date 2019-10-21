@@ -8,6 +8,12 @@ class ProjectForm extends React.Component {
         }
     }
 
+    changeStateValues ({name, value}) {
+        this.setState({
+            [name]: value
+        })
+    };
+
     render() {
         return(
             <div>
