@@ -1,24 +1,29 @@
 import React from 'react';
 
 class ProjectPage extends React.Component {
-    constructor() {
+    constructor({ location }) {
         super();
+        const params = new URLSearchParams(location.search);
+        let name = params.get("name");
+        this.state = {
+            name: name
+        }
     }
 
     render() {
         return(
             <div class="card text-center">
                 <div class="card-header">
-                    PROJECT
+                    {this.state.name}
                 </div>
 
                 <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <h5 class="card-title">Title</h5>
+                    <p class="card-text">Text</p>
                 </div>
 
                 <div class="card-footer text-muted">
-                    2 days ago
+                    Created:
                 </div>
             </div>
         );
