@@ -1,12 +1,13 @@
 import React from 'react';
+import Project from '../components/Project';
 
 class ProjectsPage extends React.Component {
     constructor(){
         super();
         this.state = {
             projects: [
-                "project1",
-                "proyect2",
+                {name: "project1"},
+                {name: "project2"},
             ]
         }
     }
@@ -15,7 +16,8 @@ class ProjectsPage extends React.Component {
             <div>
                 {this.state.projects.map(project => {
                     return (
-                        <button>{project}</button>);
+                        <Project
+                            name={project.name}/>);
                 })}
             </div>
         );
