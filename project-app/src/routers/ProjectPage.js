@@ -6,15 +6,20 @@ class ProjectPage extends React.Component {
         super();
         const params = new URLSearchParams(location.search);
         let name = params.get("name");
+        let description = params.get("description");
         this.state = {
-            name: name
+            name: name,
+            description: description,
         }
     }
 
     render() {
         return(
-            <div class="card text-center">
-                <Project />
+            <div className="card text-center">
+                <Project
+                    name={this.state.name}
+                    description={this.state.description}
+                />
             </div>
         );
     }
