@@ -1,8 +1,12 @@
 import React from 'react';
 
 class Project extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
+        this.state = {
+            name: this.props.name,
+            description: this.props.description,
+        }
     }
 
     render() {
@@ -10,11 +14,11 @@ class Project extends React.Component {
             <div className="card text-center mx-auto mb-4 mt-4" style={{width: 250}}>
                 <div>
                     <div class="card-header">
-                        Name
+                        {this.state.name}
                     </div>
 
                     <div class="card-body">
-                        <p class="card-text">Description</p>
+                        <p class="card-text">{this.state.description}</p>
                     </div>
 
                     <div class="card-footer text-muted">
