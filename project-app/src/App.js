@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
-import ProjectsPage from './routers/ProjectsPage';
+import AllProjectsPage from './routers/AllProjectsPage';
 import ProjectPage from './routers/ProjectPage';
 import FormPage from './routers/FormPage';
 
@@ -19,7 +19,7 @@ class App extends React.Component {
             <Link className="btn btn-light m-2" to="/projectform">Add new project</Link>
           </nav>
           <div>
-            <Route exact path="/" component={ProjectsPage}/>
+            <Route exact path="/" component={AllProjectsPage}/>
             <Route path="/project" component={ProjectPage}/>
             <Route path="/projectform" component={FormPage}/>
           </div>

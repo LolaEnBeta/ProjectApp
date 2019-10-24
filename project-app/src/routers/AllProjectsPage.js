@@ -1,7 +1,7 @@
 import React from 'react';
 import Project from '../components/Project';
 
-class ProjectsPage extends React.Component {
+class AllProjectsPage extends React.Component {
     constructor(){
         super();
         this.state = {
@@ -31,4 +31,4 @@ class ProjectsPage extends React.Component {
     }
 }
 
-export default ProjectsPage;
+export default AllProjectsPage;
