@@ -6,8 +6,14 @@ class ProjectsPage extends React.Component {
         super();
         this.state = {
             projects: [
-                {name: "project1"},
-                {name: "project2"},
+                {
+                    name: "project1",
+                    description: "new project",
+                },
+                {
+                    name: "project2",
+                    description: "another project",
+                },
             ]
         }
     }
@@ -17,7 +23,8 @@ class ProjectsPage extends React.Component {
                 {this.state.projects.map(project => {
                     return (
                         <Project
-                            name={project.name}/>);
+                            name={project.name}
+                            description={project.description}/>);
                 })}
             </div>
         );
