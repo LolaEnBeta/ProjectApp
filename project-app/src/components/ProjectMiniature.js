@@ -31,7 +31,7 @@ class ProjectMiniature extends React.Component {
                 <div>
                     <Link
                         className="btn btn-light m-2"
-                        to={"/project?name=" + this.state.name + "&description=" + this.state.description}>
+                        to={"/project?name=" + this.state.name + "&description=" + this.state.description + "&dateOfCreation=" + this.state.dateOfCreation} >
                         Open project
                     </Link>
                 </div>
