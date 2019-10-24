@@ -6,6 +6,7 @@ class Project extends React.Component {
         super(props);
         this.state = {
             name: this.props.name,
+            description: this.props.description,
         }
     }
 
@@ -18,8 +19,7 @@ class Project extends React.Component {
                     </div>
 
                     <div class="card-body">
-                        <h5 class="card-title">About</h5>
-                        <p class="card-text">- Descrition here -</p>
+                        <p class="card-text">{this.state.description}</p>
                     </div>
 
                     <div class="card-footer text-muted">
