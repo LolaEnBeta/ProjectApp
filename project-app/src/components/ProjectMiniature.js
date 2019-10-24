@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-class Project extends React.Component {
+class ProjectMiniature extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -39,4 +39,4 @@ class Project extends React.Component {
     }
 }
 
-export default Project;
+export default ProjectMiniature;

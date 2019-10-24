@@ -1,5 +1,5 @@
 import React from 'react';
-import Project from '../components/Project';
+import ProjectMiniature from '../components/ProjectMiniature';
 
 class AllProjectsPage extends React.Component {
     constructor(){
@@ -22,7 +22,7 @@ class AllProjectsPage extends React.Component {
             <div>
                 {this.state.projects.map(project => {
                     return (
-                        <Project
+                        <ProjectMiniature
                             name={project.name}
                             description={project.description}/>);
                 })}
