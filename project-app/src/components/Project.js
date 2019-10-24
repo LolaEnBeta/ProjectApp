@@ -6,6 +6,7 @@ class Project extends React.Component {
         this.state = {
             name: this.props.name,
             description: this.props.description,
+            dateOfCreation: this.props.dateOfCreation,
         }
     }
 
@@ -13,16 +14,16 @@ class Project extends React.Component {
         return(
             <div className="card text-center mx-auto mb-4 mt-4" style={{width: 250}}>
                 <div>
-                    <div class="card-header">
+                    <div className="card-header">
                         {this.state.name}
                     </div>
 
-                    <div class="card-body">
-                        <p class="card-text">{this.state.description}</p>
+                    <div className="card-body">
+                        <p className="card-text">{this.state.description}</p>
                     </div>
 
-                    <div class="card-footer text-muted">
-                        Created:
+                    <div className="card-footer text-muted">
+                        <p className="card-text">Created on: {this.state.dateOfCreation}</p>
                     </div>
                 </div>
             </div>
