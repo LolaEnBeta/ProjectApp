@@ -11,12 +11,29 @@ class Project extends React.Component {
 
     render() {
         return(
-            <div className="mt-2">
-                <Link
-                    className="btn btn-light mt-2"
-                    to={"/project?name=" + this.state.name}>
-                    {this.state.name}
-                </Link>
+            <div className="card text-center mx-auto mb-4" style={{width: 250}}>
+                <div>
+                    <div class="card-header">
+                        {this.state.name}
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">About</h5>
+                        <p class="card-text">- Descrition here -</p>
+                    </div>
+
+                    <div class="card-footer text-muted">
+                        Created:
+                    </div>
+                </div>
+
+                <div>
+                    <Link
+                        className="btn btn-light m-2"
+                        to={"/project?name=" + this.state.name}>
+                        Open project
+                    </Link>
+                </div>
             </div>
         );
     }
